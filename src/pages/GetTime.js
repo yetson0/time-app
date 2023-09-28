@@ -25,8 +25,9 @@ const GetTime = (props) => {
         fetch(`${fetchUrl}/${selectedTimezone}`)
         .then(resp => resp.json())
         .then(data => {
-          const date = new Date(data.datetime);
-          setCurrentTime(date.toLocaleString());
+          // const date = new Date(data.datetime);
+          // setCurrentTime(date.toLocaleString());
+          setCurrentTime(data.datetime.toLocaleString());
         })
         .catch(error => console.error('Fetch error:', error))
       }
