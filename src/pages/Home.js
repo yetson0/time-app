@@ -1,13 +1,11 @@
-import React, { useState, useEffect } from 'react';
 import GetTime from './GetTime';
 
 const Home = (props) => {
   return (
     <>
-    {/* <p>Properties: {props.vars}</p> */}
-    <GetTime />
+      <h1>Timezone-app</h1>
+      <GetTime />
     </>
-
   );
 };
 
